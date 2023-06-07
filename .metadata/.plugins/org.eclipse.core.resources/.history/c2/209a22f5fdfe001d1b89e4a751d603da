@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+class Numeros {
+	int numer;
+	int i, neg = 0, par = 0;
+	
+	public void entrrada() {
+		for (i = 0; i < 5; i++) {
+			numer = ingresarDatos("digite 1 numero");
+		}
+	}
+	
+	public static int ingresarDatos(String mensaje) {
+		String cadena;
+		int valor;
+		cadena = JOptionPane.showInputDialog(null, mensaje);
+		valor = Integer.parseInt(cadena);
+		return valor;
+	}
+	
+}

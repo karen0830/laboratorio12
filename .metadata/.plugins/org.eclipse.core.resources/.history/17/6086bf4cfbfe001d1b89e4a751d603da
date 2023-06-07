@@ -1,0 +1,39 @@
+import javax.swing.JOptionPane;
+
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		String cadena;
+		double ladoA;
+		double ladoB;
+		double resultado;
+		//variables para realizar la operación y guardar datos
+		
+		cadena = JOptionPane.showInputDialog(null, "Ingrese la longitud del lado A: ");//pedimos la longitud del lado a
+		ladoA = Double.parseDouble(cadena);//convertimos el dato que queda en cadena a decimal
+		
+		cadena = JOptionPane.showInputDialog(null, "Ingrese la longitud del lado A: ");
+		ladoB = Double.parseDouble(cadena);
+		
+		resultado = ladoA * ladoB;
+		JOptionPane.showMessageDialog(null, );
+
+	}
+	
+	public static double ingresarDatos(String mensaje) {
+		String cadena;
+		double valor;
+		
+		cadena = JOptionPane.showInputDialog(null, mensaje);
+		valor = Double.parseDouble(cadena);
+		
+		return valor;
+	}
+	
+	public static void calcularArea(double a, double b) {
+		double resultado;
+		resultado = a * b;
+		JOptionPane.showMessageDialog(null, "El resultado es: " + resultado);
+	}
+
+}

@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		Entidad rectangulo;
+		rectangulo = new Entidad();
+		
+		rectanguulo.IngresarDatos();
+		rrectangulo.calcularArea();
+	}
+
+}
